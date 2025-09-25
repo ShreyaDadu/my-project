@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager & Progress Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background:aqua;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    #task {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    #Input {
+      width: 70%;
+      padding: 10px;
+      font-size: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: whitesmoke;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+    li.completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .progress {
+      max-width: 600px;
+      margin: 20px auto;
+      background: thistle;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .bar {
+      height: 20px;
+      width: 0%;
+      background: green;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Task Manager & Progress Tracker</h1>
+
+<!--form -->
+<div id="task">
+  <input type="text" id="Input" placeholder="Enter a new task...">
+  <button onclick="addTasks()">Add</button>
+</div>
+
+
+<div class="progress">
+  <div id="progressBar" class="bar">0%</div>
+</div>
+
+<!-- Task list -->
+<ul id="List"></ul>
+
+<script>
+  let tasks = [];
+
+  function addTasks() {
+    let input = document.getElementById("Input");
+    let taskText = input.value.trim();
+    if (taskText === "") {
+      alert("Please enter a task!");
+      return;
+    }
+    tasks.push({ text: taskText, completed: false });
+    input.value = "";
+    renderTasks();
+  }
+
+  function toggleTask(index) {
+    tasks[index].completed = !tasks[index].completed;
+    renderTasks();
+  }
+
+  function deleteTask(index) {
+    tasks.splice(index, 1);
+    renderTasks();
+  }
+
+  function renderTasks() {
+    let list = document.getElementById("List");
+    list.innerHTML = "";
+    tasks.forEach((task, i) => {
+      let li = document.createElement("li");
+      li.className = task.completed ? "completed" : "";
+      li.innerHTML = `
+        <span onclick="toggleTask(${i})">${task.text}</span>
+        <button onclick="deleteTask(${i})">Delete</button>
+      `;
+      list.appendChild(li);
+    });
+    updateProgress();
+  }
+
+  function updateProgress() {
+    let total = tasks.length;
+    let done = tasks.filter(t => t.completed).length;
+    let percent = total === 0 ? 0 : Math.round((done / total) * 100);
+    let bar = document.getElementById("progressBar");
+    bar.style.width = percent + "%";
+    bar.textContent = percent + "%";
+  }
+</script>
+
+</body>
+</html>
