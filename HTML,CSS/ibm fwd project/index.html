@@ -1,0 +1,128 @@
+<!Doctype html>
+<html lang="en">
+<div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task Manager Progress Tracker</title>
+  <style>
+
+  </style>
+</head>
+<body>
+    <div class ="app" role="application" aria-label="Task Manager & Progress Tracker">
+        <header>
+            <div class="class">
+            <div class="logo" aria-hidden>TK</div>
+        <div>
+            <h1>TaskKeeper</h1>
+            <p class="task">Manage tasks • Check progress • Remain productive</p>
+        </div>
+        </div>
+        <div class="check">
+            <div class="search" title="Search tasks">
+                <svg width="20" height="10" fill="none"><path d="M11.5 11.5L15 15" stroke="white" stroke-opacity="0.6" stroke-linecap="round"></path><circle cx="7" cy="7" r="4.5" stroke="white" stroke-opacity="0.6"></circle></svg>
+                <input id="search" placeholder="Search tasks..." aria-label="Search tasks" />
+        </div>
+        <div title="Arrange by">
+            <select id="arrange">
+            <option value="newest">Sort: Newest</option>
+            <option value="oldest">Sort: Oldest</option>
+            <option value="duedate">Sort: Due date</option>
+            <option value="priority">Sort: Priority</option>
+            </select>
+        </div></div></header>
+        <main class = "main" role="main">
+            <section class="label" aria-label="tasks-heading">
+                <h2 id="tasks-heading" style="margin:0 0 16px 0">Tasks</h2>
+                <!-- adding a form -->
+                <form id="Form" class="form" onsubmit="return false" aria-label="Add task">
+                    <input id="taskTitle" type="text" placeholder="Add a new task" aria-label="Task title" required />
+                    <select id="priority" aria-label="Priority">
+                    <option value="low">Less</option>
+                    <option value="medium" selected>More</option>
+                    <option value="high">Most</option>
+                    </select>
+                    <input id="dueDate" type="date" aria-label="Due date"/>
+                    <button id="addbutton" type="submit">Add Task</button>
+                </form>
+                <div class="filter" role="tablist" aria-label="Filters">
+                    <div class="active" data-filter="all" tabindex="0">All</div>
+                    <div class="act" data-filter="active" tabindex="0">Active</div>
+                    <div class="act" data-filter="completed" tabindex="0">Completed</div>
+                    <div class="act" data-filter="today" tabindex="0">Due for Today</div>
+                </div>
+                <div id="taskList" class="task-list" aria-live="polite" aria-label="Tasks list"></div>
+
+        <footer>
+        <div class="clue">Tip: Click the checkbox to mark complete • Double click title to edit</div>
+        <div><button id="clearCompleted" class="act">Clear completed</button></div>
+        </footer>
+    </section>
+    <aside class="label" aria-label="progress-heading">
+        <h2 id="progress-heading" style="margin:0 0 16px 0">Progress</h2>
+        <div class="progress-wrap">
+          <div class="progress" aria-hidden><i id="bar"></i></div>
+          <div class="stats">
+            <div class="stat">
+              <div class="num" id="totalNum">0</div>
+              <div class="meta">Total</div>
+            </div>
+            <div class="stat">
+              <div class="num" id="doneNum">0</div>
+              <div class="meta">Done</div>
+            </div>
+            <div class="stat">
+              <div class="num" id="percent">0%</div>
+              <div class="meta">Complete</div>
+            </div>
+          </div>
+          <div class="legend">
+            <div class="row"><span class="badge high" style="width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px"></span>High priority</div>
+            <div class="row"><span class="badge medium" style="width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px"></span>Medium priority</div>
+            <div class="row"><span class="badge low" style="width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px"></span>Low priority</div>
+          </div>
+          <div style="margin-top:12px;color:var(--muted);font-size:14px">
+            <strong>Quick stats:</strong>
+            <div id="soonDue" style="margin-top:8px;color:var(--muted)">No upcoming deadlines</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="box">
+      <h3>Edit Task</h3>
+      <div class="row">
+        <input id="editTitle" placeholder="Task title" />
+      </div>
+      <div class="row">
+        <select id="editPriority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="row">
+        <input id="editDue" type="date" />
+      </div>
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+        <button id="cancelEdit" class="chip">Cancel</button>
+        <button id="saveEdit" class="chip" style="background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#fff">Save</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,231 @@
+body{
+    margin: 0px;
+}
+
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(C:\Users\Dell\AppData\Local\Temp\68ff8fa3-9697-4e08-a0c9-7004b4bc093b_Starter Kit.zip.93b\image\macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;}
+.nav-menu li a{ 
+    transition: color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+.text-center{
+    text-align: center;
+}
+#name-social-container{
+    margin-top: 20vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.social-icons li a i{
+    color: red;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px red;
+}
+section{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+
+}
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#about-para{
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+.skills-display{
+    width: 70%;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name{
+    font-size: 15px;
+    color: white;
+    padding: 6px 0 10px 20px;
+}
+.skill-name span{
+    margin: 0;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+.text-highlight{
+    color: #2857a4;
+    font-weight: 600;
+}
+.mb-blue{
+    background-color: #2857a4;
+}
+.eighty-five-percent{
+    width: 85%;
+    height:inherit;
+}
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1):after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index: 1;
+}
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+    padding: 0px;
+}
+@media  screen and (max-width: 600px) {
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left: -12% !important;
+    }
+    html{
+        font-size: 15px;
+    }
+
+}
+.timeline-traveller{
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+    margin-top: -42px;
+}
+.timeline-traveller i{
+    margin-top: -20px;
+}
+#portfolio-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}

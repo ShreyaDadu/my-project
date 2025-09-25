@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Project</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b1c15766f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="left">
+            <div class="profile">
+            <img src="https://static.vecteezy.com/system/resources/previews/001/609/720/original/man-face-avatar-cartoon-free-vector.jpg">
+            <p>John Doe</p>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-list-ul"></i>
+                <a href="#board">Dashboard</a>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-server"></i>
+                <a href="#data">Data</a>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-users"></i>
+                <a href="#users">Users</a>
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <a href="#schedule">Schedule</a>
+            </div>
+            <div class="nav">
+                <i class="fa-regular fa-address-book"></i>
+                <a href="#contact">Contact</a>
+            </div>
+        </section>
+            
+        <section class="right">
+            <header>
+                <h1>DashBoard</h1>
+                <input placeholder="Search..."/>
+            </header>
+            <article id="board">
+                <div>
+                    <h3>Activities</h3>
+                    <p>May-June 2024</p>
+                </div>
+                <div>
+                    <img src="C:\Users\Dell\OneDrive\Desktop\SHREYA DADU\CODING NINJAS\Dashboard project\multimedia\BarGraph.png" alt="Graph"/>
+                </div>
+            </article>
+            <article id="data">
+                <h2>Dashboard Data</h2>
+                    <div class="card-con">
+                        <div class="card1 card">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p class="cardHead">Total Revenue</p>
+                            <p class="cardData">$45,64,322</p>
+                        </div>
+                        <div class="card2 card">
+                            <i class="fa-solid fa-tent-arrow-left-right"></i>
+                            <p class="cardHead">Total Transaction</p>
+                            <p class="cardData">$1,450</p>
+                        </div>
+                        <div class="card3 card">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <p class="cardHead">Total Likes</p>
+                            <p class="cardData">1,234</p>
+                        </div>
+                        <div class="card4 card">
+                            <i class="fa-regular fa-user"></i>
+                            <p class="cardHead">Total users</p>
+                            <p class="cardData">856</p>
+                        </div>
+                    </div>
+            </article>
+            <article id="users">
+                <table>
+                    <h2>User Interactions</h2>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Number of Users</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>1500</td>
+                        </tr><tr>
+                            <td>April</td>
+                            <td>1250</td>
+                        </tr><tr>
+                            <td>May</td>
+                            <td>1600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="schedule">
+                <div class="schedule-head">
+                    <h3>Today's Schedule</h3>
+                    <p>See All</p>
+                </div>
+                <div class="schedule-details">
+                    <div>
+                        <p class="meets head">Meetings from suppliers from Kutta bali</p>
+                        <p class="meets detail">14.00-15.00</p>
+                        <p class="meets detail">At sunset road kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meetings from suppliers from Suresh</p>
+                        <p class="meets detail">15.00-16.00</p>
+                        <p class="meets detail">At sunset road Bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meetings from suppliers from Ajay</p>
+                        <p class="meets detail">12.00-1.00</p>
+                        <p class="meets detail">At sunset road</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meetings from suppliers from Encoprice</p>
+                        <p class="meets detail">2.00-3.00</p>
+                        <p class="meets detail">At morning on sohna road</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meetings from suppliers from JK LTD.</p>
+                        <p class="meets detail">10.00-11.00</p>
+                        <p class="meets detail">At morning tent house</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meetings from suppliers from Manager</p>
+                        <p class="meets detail">18.00-19.00</p>
+                        <p class="meets detail">At imperfected bar sohna road</p>
+                    </div>
+                </div>
+            </article>
+            <article id="contact">
+                <h2>Contact Details</h2>
+                <div class="contact-inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.897969945!2d77.04417211070437!3d28.527554409214392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1730657669737!5m2!1sen!2sin" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="feedback-form">
+                        <h2>Feedback</h2>
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Your Name" required/><br />
+                            <input type="email" name="email" placeholder="Your Email" required/><br />
+                        <textarea name="message" placeholder="Your Feedback" required>
+                        </textarea><br />
+                        <input type="submit" value="Submit Feedback"/></form>
+                    </div>
+                </div>
+            </article>
+            <footer>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>&copy;2024 Your Company Name.All Rights Reserved.</div>
+            </footer>
+        </section>
+    </main>
+    
+</body>
+</html>

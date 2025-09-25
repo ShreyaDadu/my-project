@@ -1,0 +1,360 @@
+  * {
+    margin: 0;
+    padding: 0;
+    /* background-color: beige; */
+    font-family: "Itim", cursive;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  .navbar header {
+    width: 100%;
+    height: 14vh;
+    background-color: black;
+    display: flex;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .icon {
+    margin-left: 2vw;
+    width: 15vw;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-evenly;
+    justify-content: center; /*i didnot give this*/
+    align-items: center;
+  }
+  .icon p {
+    color: red;
+    font-size: 1.5vw; /*i didnot do this*/
+  }
+  .icon img {
+    width: 9vw;
+    height: 6vh;
+    object-fit: cover;
+  }
+  .searchbox {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+  }
+  #searchbar {
+    height: 6vh;
+    width: 75%;
+    border-radius: 5px;
+    padding: 6px; /*i didnot give this too*/
+    font-size: 1.5vw;
+    border: none;
+  }
+  #search {
+    height: 6vh;
+    width: 7vw;
+    font-size: 1.5vw;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+  }
+  .essentials {
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .login,
+  .cart {
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+    color: white;
+  }
+  footer {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    padding: 10px;
+  }
+  .foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .about,
+  .help,
+  .policy,
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 8px;
+  }
+  .links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px;
+  }
+  .links a {
+    font-size: 3vw;
+    margin: 2vw;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+  }
+  
+  .contentFoot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    margin: 4vh;
+  }
+  .smartpanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 24vh;
+    background-color: white;
+  }
+  .smartpanel img {
+    height: 10vh;
+    width: 10vw;
+    object-fit: cover;
+  }
+  .smartpanel a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 1.5vw;
+  }
+  .advertis {
+    width: 100%;
+    height: 30vh;
+  }
+  .advertis img {
+    width: 100%;
+    height: 30vh;
+    padding: 5px;
+  }
+  .offers {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: scroll;
+  }
+  .offers img {
+    padding: 5px;
+    height: 30vh;
+    width: 25vw;
+  }
+  .topdeals {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    justify-content: space-evenly;
+  }
+  .topdeals h4 {
+    font-size: 1.5vw;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .deal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .topdeals a {
+    text-decoration: none;
+    font-size: 1.5vw;
+  }
+  .topdeals img {
+    width: 15vw;
+    height: 55vh;
+    object-fit: cover;
+  }
+  .deals {
+    margin: 3em;
+    display: flex;
+    justify-content: center; /* Center the <a> tag horizontally */
+    align-items: center;
+  }
+  .deals a{
+      text-align:center;
+  }
+  
+  /* Base Styles (for larger screens) remain the same */
+  
+  /* Media Query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    /* Header adjustments */
+    .navbar header {
+      height: auto; /* Adjust height to auto for flexibility */
+      flex-direction: column;
+      align-items: center;
+      padding: 1em 0;
+    }
+  
+    .icon {
+      width: auto; /* Center logo */
+      height: auto;
+      margin: 0;
+    }
+  
+    .icon img {
+      width: 50%; /* Adjust logo size */
+      height: auto;
+    }
+  
+    /* Center-align search bar and buttons */
+    .searchbox {
+      width: 90%; /* Use most of the screen width */
+      margin-top: 1em;
+      flex-direction: column;
+    }
+  
+    #searchbar {
+      width: 100%; /* Full width of container */
+      font-size: 1em;
+    }
+  
+    #search {
+      width: 100%;
+      margin-top: 0.5em;
+    }
+  
+    .essentials {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 1em;
+    }
+  
+    .login,
+    .cart {
+      width: 80%;
+      margin: 0.5em 0;
+      font-size: 1em;
+    }
+  
+    /* Footer adjustments */
+    footer {
+      flex-direction: column;
+      font-size: 1em;
+      padding: 1em;
+      height: 100%;
+    }
+  
+    .foot,
+    .links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .links a {
+      font-size: 2.5vw; /* Adjust link font size */
+    }
+  
+    .contentFoot {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Main Content Adjustments */
+    main {
+      margin: 2vh 1em;
+    }
+    .smartpanel {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
+      gap: 20px;
+      
+    }
+    .smartpanel a{
+      font-size:0.7em;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .smartpanel img{
+      margin:auto;
+      object-fit: cover;
+      width:9em;
+    }
+    .smartpanel p{
+      margin:auto;
+    }
+   .advertis
+   {
+      margin-top:22vh;
+   }
+   .offers{
+      margin-top:10vh;
+      flex-direction: column;
+      width:100%;
+   }
+   .offers img{
+      width:100%;
+   }
+   .topdeals{
+      padding:1em;
+   }
+   .topdeals h4{
+      font-size:1.5em;
+   }
+   .deal{
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x:hidden;
+  }
+  .topdeals img
+  {
+      width:100%;
+  }
+  .topdeals a{
+      font-size:5vw;
+  }
+  .foot a{
+      font-size:3vw;
+  }
+  }
+  
