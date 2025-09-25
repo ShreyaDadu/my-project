@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+:root{
+    --primary-color: #ff511a;
+    --secondary-color: #43ba7f;
+    --text-color: #212741;
+    --bg-color: #fff;
+    --link-color: #e36402;
+    --dark-bg-color: #181d30;
+}
+body{
+    background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+
+}
+header{
+    background-color: rgb(116, 113, 113);
+}
+a{
+    text-decoration: line-through !important;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+.logo img{
+    height: 5rem;
+    border-radius: 50%;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navlist li{
+    padding: 0 1rem;
+}
+.navlist li a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: all 0.3s ease 0s;
+}
+.navlist li a:hover,
+.navlist li a.active{
+    color: var(--link-color);
+}
+.hamburger-menu{
+    display: none;
+}
+
+
+.hero{
+    background-image: url(C:\Users\Dell\AppData\Local\Temp\abe3b009-547b-49c5-9665-ca5ae96ca809_Starter Kit.zip.809\Capstone Project\assets\images\hero-bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: slide-in 2s ease-out forwards;
+}
+@keyframes slide-in{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-text{
+    width: 50%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.hero-text h2{
+    font-size: 3.5rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    line-height: 4.375rem;
+    margin-bottom: 2.5rem;
+}
+.hero-text h2 em{
+    font-style: normal;
+    color: var(--primary-color);
+}
+.divider{
+    width: 5rem;
+    height: 0.375rem;
+    border-radius: 0.1875rem;
+    background-color: var(--bg-color);
+    margin-bottom: 2.5rem;
+}
+.hero-text p{
+    color: var(--bg-color);
+    margin-right: 3.75rem;
+    margin-bottom: 3.125rem;
+}
+@media (max-width:990px) {
+    .hero{
+        padding: 4rem;
+    }
+    .hero-text{
+        width: 90%;
+        text-align: center;
+
+    }
+    .hero-text h2{
+        font-size: 2rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    .divider{
+        margin: 1rem auto;
+    }
+    .hero-text p{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+}
+@media (max-width:768px) {
+    .logo img{
+        height: 4rem;
+    }
+    .navlist li a{
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    .divider{
+        width: 12rem;
+    }
+    .service-item{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .service-item i{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:560px) {
+    .navlist{
+        display: none;
+    }
+
+.divider,
+.hero-text p{
+    display: none;
+}
+.course-list li{
+    flex-direction: column;
+}
+.hamburger-menu{
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}}
+
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.section-heading h6{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.section-heading h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--text-color);
+
+}
+.service-item{
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    width: 95%;
+}
+
+.service-item h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+.service-item p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--primary-color);
+}
+.service-item i{
+    transition: all 0.5s;
+    float: right;
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    margin-right: -8%;
+
+}
+.services i:hover{
+    margin-top: 1rem;
+}
+.banner {
+    background-image: url(C:\Users\Dell\AppData\Local\Temp\7c91af2c-3c2c-4388-8324-3f228a7d2b99_Starter Kit.zip.b99\Capstone Project\assets\images\banner-bg.jpg);
+    background-size: cover; 
+    padding: 5rem 0;
+    margin-top: 2%;
+}
+
+.banner .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.banner h4{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--bg-color);
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.banner h4 em{
+    font-style: normal;
+    color: var(--secondary-color);
+}
+.banner h4 strong{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.btn a{
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.btn a:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+.btn1 a{
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+.btn2 a{
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+}
+.about-us{
+    margin-top: 3%;
+    text-align: center;
+}
+.course-list{
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+}
+.course-list li{
+    display: flex;
+}
+.course-list li span{
+    flex: 1;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.list-head span{
+    font-weight: 600;
+}
+.item-title{
+    color: var(--secondary-color) !important;
+    font-weight: 600 !important;
+}
+#form-submit:hover{
+    opacity: 0.9;
+}
+.form-control,
+.form-select{
+    margin-bottom: 1.5rem;
+}
+.testimonials{
+    margin-top: 1%;
+    width: 95%;
+    margin-left: 1.7rem;
+}
+.testimonial-card{
+    display: flex;
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(74,13,13,0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 2px solid rgb(241,230,230);
+}
+.testimonial-card .content{
+    flex: 1;
+}
+.testimonial-card i{
+    font-size: 3vw;
+    color: #fff;
+    background-color: #ff6347;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.testimonial-card p{
+    font-size: 1.4vw;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+.testimonial-card h4{
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: var(--dark-bg-color);
+    margin-bottom: 0.5rem;
+}
+.testimonial-card .subtitle{
+    font-size: 1.2vw;
+    color: var(--primary-color);
+}
+.testimonial-card .image-container{
+    width: 20%;
+    border-radius: 10px;
+}
+.testimonial-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-control-prev{
+    left: -10%;
+}
+.carousel-control-next{
+    right: -10%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+     filter: invert(1);
+}
+
+body{
+    background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+::selection{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #e6e3e3;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--primary-color);
+}

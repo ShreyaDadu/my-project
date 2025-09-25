@@ -1,0 +1,183 @@
+header{
+    background-color: rgb(64, 35, 151);
+    border:solid 1px rgb(60, 60, 175);
+    padding:5px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color:white;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+h2{
+    color:white;
+    font-size: 30px;
+    font-weight: bolder;
+    padding:20px;
+    margin-top: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3{
+    color:white;
+    font-size: 30px;
+    font-weight: bolder;
+    padding:20px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+body{
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003226_1714596295_pics1.png);
+    margin-top: 0px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(6px);
+}
+#image1{
+    width:220px;
+    height:200px;
+    display: inline-block;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003227_1714596308_pics2.png);
+    background-size:cover;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-left: 200px;
+    margin-right: 70px;
+    text-align: center;
+}
+#image2{
+    width:220px;
+    height:200px;
+    display: inline-block;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003228_1714596324_pics3.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-right: 70px;
+    text-align: center;
+}
+#image3{
+    width:220px;
+    height:200px;
+    display: inline-block;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003229_1714596356_pics4.png);
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+#star{
+    width:400px;
+    height:250px;
+    background-color: white;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-right:200px;
+    margin-top: 80px;
+    text-align: center;
+    overflow-y: scroll;
+    position: sticky;
+    margin-bottom: 50px;
+}
+#image4{
+    width:200px;
+    height:180px;
+    display: block;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003230_1714596372_pics5.png);
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-left:90px;
+    margin-right: 70px;
+    background-position: center;
+}
+#image5{
+    width:200px;
+    height:180px;
+    display: block;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003231_1714596390_pics6.png);
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-left:90px;
+    margin-right: 70px;
+    background-position: center;
+}
+#image6{
+    width:200px;
+    height:180px;
+    display: block;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003232_1714596401_pics7.png);
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-left:90px;
+    margin-right: 70px;
+    background-position: center;
+}
+section{
+    position: sticky;
+    overflow-y: scroll;
+}
+table,th,td{
+    border:1px solid grey;
+    border-collapse: collapse;
+}
+table{
+    margin-top: 70px;
+    width:80%;
+    height: 10%;
+    margin-left: 95px;
+    margin-right: 50px;
+}
+th{
+    background-color:midnightblue;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+td{
+    color:black;
+    font-weight:bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    padding-left: 8px;
+}
+footer{
+    margin-top: 60px;
+    background-color:rgb(64, 35, 151);
+    border:1px solid rgb(64, 35, 151);
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    color:white;
+}
+.image1{
+    line-height: 350px;
+    color: white;
+}
+.image2{
+    line-height: 350px;
+    color: wheat;
+}
+.image3{
+    line-height: 350px;
+    color: white;
+}
